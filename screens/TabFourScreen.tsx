@@ -2,15 +2,16 @@ import * as React from 'react';
 import { StyleSheet } from 'react-native';
 
 import EditScreenInfo from '../components/EditScreenInfo';
-import { Text, View, TextInput } from '../components/Themed';
+import { Text, View } from '../components/Themed';
 
-export default function TabTwoScreen() {
+export default function TabOneScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Search Here</Text>
-      <TextInput style={{ backgroundColor: '#ededed', height: 40, width: 190}} />
+      <Text style={styles.title}>Name: Nikhil Ailani</Text>
+      <Text style={styles.title}>Age: 21</Text>
+      <Text style={styles.title}>Followers: 100</Text>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <EditScreenInfo path="/screens/TabTwoScreen.tsx" />
+      <EditScreenInfo path="/screens/TabOneScreen.tsx" />
     </View>
   );
 }
